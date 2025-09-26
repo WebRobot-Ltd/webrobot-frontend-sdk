@@ -486,8 +486,8 @@ MIT License - vedi [LICENSE](LICENSE) per dettagli.
 
 ```bash
 # Configure npm for GitHub Packages
-echo "@webrobot:registry=https://npm.pkg.github.com" >> .npmrc
-echo "//npm.pkg.github.com/:_authToken=YOUR_GITHUB_TOKEN" >> .npmrc
+cp .npmrc.example .npmrc
+# Edit .npmrc and replace YOUR_GITHUB_TOKEN with your actual token
 
 # Install package
 npm install @webrobot/frontend-sdk@latest
